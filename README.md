@@ -1,6 +1,6 @@
 # Bank tech test
 
-This is a mock tech tests for week 10 of Maker's Academy. I took a day and a half to build three classes, of which Bank is the dependant, and Transaction and Statement the dependencies. The trade-off benefit of the dependency introduced by the extra classes was to adhere better to the SRP. It made it more complicated as I had to add mocks to inject dependency, but it was a good opportunity to practise my mocking skills.
+This is a mock tech test for week 10 of Maker's Academy. I took a day and a half to build three classes, of which Bank is the dependant, and Transaction and Statement the dependencies. The trade-off benefit of the dependency introduced by the extra classes was to adhere better to the SRP. It made it more complicated as I had to add mocks to inject dependency, but it was a good opportunity to practise my mocking skills.
 
 The rough planning can be seen at the bottom of the readme, and its progress tracked through the commits. I originally planned to have two separate classes for Deposit and Withdrawal, but when I built them out I noticed they were mirroring one another, so to keep things dry I combined them into one and just added a conditional to decide which column (credit/debit) the transaction should go in.
 
