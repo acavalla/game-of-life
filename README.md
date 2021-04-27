@@ -1,45 +1,20 @@
-# Individual technical challenges
+# Conway's Game of Life
 
-#### Primary goal
+![game of life example](./assets/Gospers_glider_gun.gif)
 
-By the end of the week, the goal is to be able to answer "yes" to the week's primary question:
+The Game of life is a zero player game developed in the 70's by John Horton Conway. Check out the [Wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) for a full description.
+The evolving state of the game is determined by the initial configuration - some configurations become infinitely evolving constellations, others eventually evolve into a stable patterns, whilst others die off completely.
+It is commonly used as a tech test as it can be solved in many different ways that clearly show the level of the programmer.
 
-* **Can you solve a challenging technical problem by writing well crafted code?**
+### The Brief
 
-By "well crafted code", we mean code that is well tested, easy to read and easy to change.
+The rules are as follows:
 
-#### Secondary goals
+* The game evolves in turns, commonly known as 'ticks'.
+* All changes occur at the same time.
+* Any live cell with 2 or 3 live neighbours survives until next tick.
+* Any live cell with less than 2 live neighbours dies (underpopulation).
+* Any live cell with more than 3 live neighbours dies (overpopulation).
+* Any dead cell with exactly 3 neighbours becomes a live cell (reproduction).
 
-By the end of the week, you should:
-
-* Feel more confident in your ability to complete a tech test.
-* Have developed a structured process to approaching complex problems, utilising TDD and good OO design skills.
-
-### Structure of the week
-
-This week, you'll work solo to complete different technical challenges. A self assessment form will help you reflect on the quality of your code, and coaches will review your code once you believe you have achieved professional quality.
-
-This week, you'll also come up with ideas for final projects.
-
-### Processes
-
-This week is especially good for focusing on the question, "am I a better developer than I was yesterday?"
-
-There are up to three tech tests this week.  This means you can start from scratch three times.  It means you can reflect on what was good and what was bad three times.  And it means you can try new things to improve three times.
-
-### Code reviews from your coach
-
-Your coach will tell you how to request code reviews.
-
-### Language
-
-You can use Ruby or JavaScript for any of the challenges.
-
-### Challenges
-
-Enjoy these challenges - they are either adapted or directly copied from actual tech tests that employers send out. You will find other tech tests in this folder that you can attempt over the weekend or after graduation.
-
-### Resources
-
-* [Tech test checklist](https://github.com/makersacademy/jobhunters/tree/master/pills/tech_tests)
-* [The Coding Dojo Handbook (recommended reading post-course)](https://leanpub.com/codingdojohandbook)
+Write code that is capable of calculating each new generation, given a starter board. Although you don't have to build a visualisation tool to be able to see the evolution, it should be easy to extend the program to add on a web or command line UI.
