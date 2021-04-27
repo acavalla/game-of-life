@@ -32,9 +32,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
                                                                ])
 SimpleCov.start
 Dir['./spec/support/*.rb'].sort.each { |f| require f }
-=======
-#
->>>>>>> 8e5b50807d086747ff876294c1959026c3693fa4
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
