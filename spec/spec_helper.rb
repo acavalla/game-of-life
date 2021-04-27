@@ -22,7 +22,6 @@ SimpleCov.start
 # a separate helper file that requires the additional dependencies and performs
 # the additional setup, and require it from the spec files that actually need
 # it.
-<<<<<<< HEAD
 
 require 'simplecov'
 require 'simplecov-console'
